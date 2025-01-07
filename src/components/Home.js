@@ -5,8 +5,10 @@ import buildings from '../images/buildings-duotone 1.png'
 import users from '../images/users-duotone 1.png'
 // import Logo from '../images/Logo.png'
 import { Search, MapPin } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
   const suggestions = ['Designer', 'Programming', 'Digital Marketing', 'Video', 'Animation'];
 
   return (
@@ -43,7 +45,10 @@ const Home = () => {
                   className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
-              <button className="bg-blue-600 text-white px-8 py-2 rounded-md hover:bg-blue-700 transition duration-300 whitespace-nowrap">
+              <button
+                className="bg-blue-600 text-white px-8 py-2 rounded-md hover:bg-blue-700 transition duration-300 whitespace-nowrap"
+                onClick={() => navigate('/find-job')}
+              >
                 Find Job
               </button>
             </div>

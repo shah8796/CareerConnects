@@ -18,7 +18,7 @@ const CreateAccount = () => {
           {/* Header */}
           <h1 className="text-2xl font-semibold mb-2">Create account.</h1>
           <p className="text-sm text-gray-600 mb-8">
-            Already have account? <a href="/login" className="text-blue-600 hover:underline">Log in</a>
+            Already have account? <a href="/signin" className="text-blue-600 hover:underline">Log in</a>
           </p>
 
           {/* Form */}
